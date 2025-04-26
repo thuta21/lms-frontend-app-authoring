@@ -6,7 +6,7 @@ import { SavingErrorAlert } from '../../generic/saving-error-alert';
 import ProcessingNotification from '../../generic/processing-notification';
 import SubHeader from '../../generic/sub-header/SubHeader';
 import messages from '../messages';
-import CertificatesSidebar from './certificates-sidebar/CertificatesSidebar';
+// import CertificatesSidebar from './certificates-sidebar/CertificatesSidebar';
 import HeaderButtons from './header-buttons/HeaderButtons';
 import useLayout from './hooks/useLayout';
 
@@ -43,9 +43,9 @@ const MainLayout = ({ courseId, showHeaderButtons, children }) => {
                 {children}
               </article>
             </Layout.Element>
-            <Layout.Element>
-              <CertificatesSidebar courseId={courseId} />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <CertificatesSidebar courseId={courseId} /> */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
       </Container>

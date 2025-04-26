@@ -14,7 +14,7 @@ import messages from './messages';
 import ContentGroupsSection from './content-groups-section';
 import ExperimentConfigurationsSection from './experiment-configurations-section';
 import EnrollmentTrackGroupsSection from './enrollment-track-groups-section';
-import GroupConfigurationSidebar from './group-configuration-sidebar';
+// import GroupConfigurationSidebar from './group-configuration-sidebar';
 import { useGroupConfigurations } from './hooks';
 
 const GroupConfigurations = ({ courseId }) => {
@@ -93,14 +93,14 @@ const GroupConfigurations = ({ courseId }) => {
               )}
             </Stack>
           </Layout.Element>
-          <Layout.Element>
-            <GroupConfigurationSidebar
-              courseId={courseId}
-              shouldShowExperimentGroups={shouldShowExperimentGroups}
-              shouldShowContentGroup={!!contentGroup}
-              shouldShowEnrollmentTrackGroup={!!enrollmentTrackGroup}
-            />
-          </Layout.Element>
+          {/* <Layout.Element> */}
+          {/*   <GroupConfigurationSidebar */}
+          {/*     courseId={courseId} */}
+          {/*     shouldShowExperimentGroups={shouldShowExperimentGroups} */}
+          {/*     shouldShowContentGroup={!!contentGroup} */}
+          {/*     shouldShowEnrollmentTrackGroup={!!enrollmentTrackGroup} */}
+          {/*   /> */}
+          {/* </Layout.Element> */}
         </Layout>
       </Container>
       <div className="alert-toast">

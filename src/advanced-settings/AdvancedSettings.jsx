@@ -20,7 +20,7 @@ import {
   getCourseAppSettings, getSavingStatus, getProctoringExamErrors, getSendRequestErrors, getLoadingStatus,
 } from './data/selectors';
 import SettingCard from './setting-card/SettingCard';
-import SettingsSidebar from './settings-sidebar/SettingsSidebar';
+// import SettingsSidebar from './settings-sidebar/SettingsSidebar';
 import validateAdvancedSettingsData from './utils';
 import messages from './messages';
 import ModalError from './modal-error/ModalError';
@@ -223,12 +223,12 @@ const AdvancedSettings = ({ intl, courseId }) => {
                 </div>
               </article>
             </Layout.Element>
-            <Layout.Element>
-              <SettingsSidebar
-                courseId={courseId}
-                proctoredExamSettingsUrl={mfeProctoredExamSettingsUrl}
-              />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <SettingsSidebar */}
+            {/*     courseId={courseId} */}
+            {/*     proctoredExamSettingsUrl={mfeProctoredExamSettingsUrl} */}
+            {/*   /> */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
       </Container>

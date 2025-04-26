@@ -48,6 +48,12 @@
 
   .nav-link.active {
     background-color: transparent;
+    color: $app-primary-500;
+    border-color: $app-primary-500;
+  }
+
+  .badge-info {
+    display: none;
   }
 }
 

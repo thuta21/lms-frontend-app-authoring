@@ -23,7 +23,7 @@ import AssignmentSection from './assignment-section';
 import CreditSection from './credit-section';
 import DeadlineSection from './deadline-section';
 import GradingScale from './grading-scale/GradingScale';
-import GradingSidebar from './grading-sidebar';
+// import GradingSidebar from './grading-sidebar';
 import { useConvertGradeCutoffs, useUpdateGradingData } from './hooks';
 import messages from './messages';
 
@@ -218,13 +218,13 @@ const GradingSettings = ({ courseId }) => {
                   </section>
                 </article>
               </Layout.Element>
-              <Layout.Element>
-                <GradingSidebar
-                  courseId={courseId}
-                  intl={intl}
-                  proctoredExamSettingsUrl={courseSettingsData.mfeProctoredExamSettingsUrl}
-                />
-              </Layout.Element>
+              {/* <Layout.Element> */}
+              {/*   <GradingSidebar */}
+              {/*     courseId={courseId} */}
+              {/*     intl={intl} */}
+              {/*     proctoredExamSettingsUrl={courseSettingsData.mfeProctoredExamSettingsUrl} */}
+              {/*   /> */}
+              {/* </Layout.Element> */}
             </Layout>
           </section>
         </div>

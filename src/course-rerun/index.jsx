@@ -16,7 +16,7 @@ import { getLoadingStatuses } from '../generic/data/selectors';
 import InternetConnectionAlert from '../generic/internet-connection-alert';
 import { RequestStatus } from '../data/constants';
 import CourseRerunForm from './course-rerun-form';
-import CourseRerunSideBar from './course-rerun-sidebar';
+// import CourseRerunSideBar from './course-rerun-sidebar';
 import messages from './messages';
 import { useCourseRerun } from './hooks';
 
@@ -76,9 +76,9 @@ const CourseRerun = () => {
                 onClickCancel={handleRerunCourseCancel}
               />
             </Layout.Element>
-            <Layout.Element>
-              <CourseRerunSideBar />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <CourseRerunSideBar /> */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
       </Container>

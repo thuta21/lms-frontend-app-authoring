@@ -36,7 +36,7 @@ import getPageHeadTitle from '../generic/utils';
 import { getCurrentItem, getProctoredExamsFlag } from './data/selectors';
 import { COURSE_BLOCK_NAMES } from './constants';
 import HeaderNavigations from './header-navigations/HeaderNavigations';
-import OutlineSideBar from './outline-sidebar/OutlineSidebar';
+// import OutlineSideBar from './outline-sidebar/OutlineSidebar';
 import StatusBar from './status-bar/StatusBar';
 import EnableHighlightsModal from './enable-highlights-modal/EnableHighlightsModal';
 import SectionCard from './section-card/SectionCard';
@@ -434,9 +434,9 @@ const CourseOutline = ({ courseId }) => {
                 </div>
               </article>
             </Layout.Element>
-            <Layout.Element>
-              <OutlineSideBar courseId={courseId} />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <OutlineSideBar courseId={courseId} /> */}
+            {/* </Layout.Element> */}
           </Layout>
           <EnableHighlightsModal
             isOpen={isEnableHighlightsModalOpen}

@@ -15,7 +15,7 @@ import SubHeader from '../generic/sub-header/SubHeader';
 import { RequestStatus } from '../data/constants';
 import { useModel } from '../generic/model-store';
 import messages from './messages';
-import ExportSidebar from './export-sidebar/ExportSidebar';
+// import ExportSidebar from './export-sidebar/ExportSidebar';
 import {
   getCurrentStage, getError, getExportTriggered, getLoadingStatus, getSavingStatus,
 } from './data/selectors';
@@ -99,9 +99,9 @@ const CourseExportPage = ({ intl, courseId }) => {
                 <ExportFooter />
               </article>
             </Layout.Element>
-            <Layout.Element>
-              <ExportSidebar courseId={courseId} />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <ExportSidebar courseId={courseId} /> */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
         <ExportModalError courseId={courseId} />

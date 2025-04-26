@@ -17,7 +17,7 @@ import Loading from '../generic/Loading';
 import InternetConnectionAlert from '../generic/internet-connection-alert';
 import Header from '../header';
 import SubHeader from '../generic/sub-header/SubHeader';
-import HomeSidebar from './home-sidebar';
+// import HomeSidebar from './home-sidebar';
 import TabsSection from './tabs-section';
 import OrganizationSection from './organization-section';
 import VerifyEmailLayout from './verify-email-layout';
@@ -159,9 +159,9 @@ const StudioHome = () => {
             />
           </section>
         </Layout.Element>
-        <Layout.Element>
-          <HomeSidebar />
-        </Layout.Element>
+        {/* <Layout.Element> */}
+        {/*   <HomeSidebar /> */}
+        {/* </Layout.Element> */}
       </Layout>
     );
   };

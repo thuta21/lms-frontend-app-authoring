@@ -19,7 +19,7 @@ import SubHeader from '../generic/sub-header/SubHeader';
 import ProcessingNotification from '../generic/processing-notification';
 import EmptyPlaceholder from './empty-placeholder/EmptyPlaceholder';
 import TextbookCard from './textbook-card/TextbooksCard';
-import TextbookSidebar from './textbook-sidebar/TextbookSidebar';
+// import TextbookSidebar from './textbook-sidebar/TextbookSidebar';
 import TextbookForm from './textbook-form/TextbookForm';
 import { useTextbooks } from './hooks';
 import { getTextbookFormInitialValues } from './utils';
@@ -119,9 +119,9 @@ const Textbooks = ({ courseId }) => {
                 </section>
               </article>
             </Layout.Element>
-            <Layout.Element>
-              <TextbookSidebar courseId={courseId} />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <TextbookSidebar courseId={courseId} /> */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
       </Container>

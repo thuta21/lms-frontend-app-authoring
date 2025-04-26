@@ -46,7 +46,7 @@ div.xblock-highlight {
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 5px 5px $primary-500;
+    box-shadow: 0 0 5px 5px $app-primary-500;
   }
 
   100% {
@@ -65,3 +65,192 @@ body {
 mark {
   padding: 0;
 }
+
+.spinner-border {
+  border: 0.25em solid $app-primary-500;
+}
+
+.btn-outline-primary {
+  border-color: $app-primary-500;
+  color: $app-primary-500;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: $app-primary-50;
+  border-color: $app-primary-500;
+  color: $app-primary-500;
+}
+
+.btn-primary {
+  background-color: $app-primary-500;
+  border-color: $app-primary-500;
+}
+
+.btn-icon.btn-icon-primary-active {
+  color: white !important;
+  background-color: $app-primary-700;
+}
+
+
+
+.btn-icon.btn-icon-primary-active.focus, .btn-icon.btn-icon-primary-active:focus {
+  background-color:  $app-primary-700;
+}
+
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active, .btn-icon.btn-icon-primary:active{
+ background-color: $app-primary-700;
+  border-color: $app-primary-700;
+}
+
+.btn-icon.btn-icon-primary:focus {
+  color: $app-primary-500;
+  box-shadow: inset 0 0 0 2px $app-primary-700;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: $app-primary-500;
+  border-color: $app-primary-500;
+}
+
+a {
+  color: $app-primary-500;
+}
+
+a:hover {
+  color: $app-primary-700;
+}
+
+.sidebar-link > a {
+  color: $app-primary-500;
+}
+
+a.text-info-500, .pgn__hyperlink {
+  color: $app-primary-500 !important;
+}
+
+a.text-info-500:hover, a.text-info-500:focus {
+  color: $app-primary-700 !important;
+}
+
+.dropdown-item:active {
+  color: white;
+  background-color: $app-primary-700;
+}
+
+.form-control:hover {
+  border-color: $app-primary-500;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 1px $app-primary-500;
+}
+
+.course-outline-section > div > div {
+    border-left-color: $app-primary-500 !important;
+}
+
+.section-card .section-card__subsections > div {
+  border-left-color: $app-primary-500 !important;
+}
+
+.subsection-card .subsection-card__units > div {
+  border-left-color: $app-primary-500 !important;
+}
+
+.pgn__bubble.pgn__bubble-primary {
+  background-color: $app-primary-500;
+}
+
+.btn-icon.btn-icon-primary {
+  color: $app-primary-500;
+}
+
+.btn-icon.btn-icon-primary:hover {
+  background-color: $app-primary-700;
+}
+
+.pgn__data-table__selectable-card.is-selected > :first-child::before, .pgn__card.clickable:focus::before, .pgn__card.clickable.focus::before {
+  border-color: $app-primary-500;
+}
+
+.btn-link {
+  color: $app-primary-500 !important;
+}
+
+.btn-link:hover, .btn-link:not(:disabled):not(.disabled):active, .btn-link:active {
+  color: $app-primary-700;
+}
+
+.btn-outline-primary.focus::before, .btn-outline-primary:focus::before {
+  border: 0.125rem solid $app-primary-500;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+  color: $app-primary-500;
+  border-color: $app-primary-500;
+  background-color: $app-primary-50;
+}
+
+.item-card-header > button:hover, .item-card-header > a:hover {
+  color: $app-text-header;
+  background-color: transparent !important;
+}
+
+.btn-tertiary:hover, .btn-tertiary:not(:disabled):not(.disabled):active, .btn-tertiary:active {
+  color: white;
+  background-color: $app-primary-700;
+}
+
+.nav > button, .nav > div > button {
+  color: $app-text-header !important;
+}
+.nav > button:hover {
+  color: white !important;
+}
+.nav > div > button:hover {
+  color: $app-primary-500 !important;
+}
+
+.pgn__selectable_box-active {
+  outline: 2px solid $app-primary-500;
+}
+
+.pgn__form-checkbox-input:checked, .pgn__selectable_box.taxonomy-tags-selectable-box input.pgn__form-checkbox-input:indeterminate, .pgn__form-radio-input:checked, .pgn__form-switch-input:checked {
+    border-color: $app-primary-500;
+}
+
+.pgn__form-checkbox-input, .pgn__form-radio-input, .pgn__form-switch-input, .pgn__form-checkbox-input:focus, .pgn__form-radio-input:focus {
+  border-color: $app-primary-500;
+}
+
+.pgn__form-checkbox-input:focus::before, .pgn__form-radio-input:focus::before, .btn-tertiary.focus::before, .btn-tertiary:focus::before {
+  border: 0.125rem solid $app-primary-500;
+}
+
+.pgn__form-checkbox-input:checked, .pgn__selectable_box.taxonomy-tags-selectable-box input.pgn__form-checkbox-input:indeterminate {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M21 3H3v18h18V3zm-11 14l-5-5 1.41-1.41L11 14.41l7.59-7.59 1.41 1.42z' fill='%23228B22'/%3E%3C/svg%3E");
+}
+
+.pgn__form-checkbox-input:indeterminate {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='m21 3h-18v18h18zm-4 10h-10v-2h10z' fill='%23228B22'/%3E%3C/svg%3E");
+}
+
+.pgn__form-radio-input:checked, .pgn__selectable_box.taxonomy-tags-selectable-box input.pgn__form-radio-input.pgn__form-checkbox-input:indeterminate {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23228B22'/%3E%3C/svg%3E");
+}
+
+.pgn__searchfield.has-focus:not(.pgn__searchfield--external)::after {
+  border: 0.3125rem double $app-primary-500,
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: $app-primary-500;
+    border-color: $app-primary-500;
+}
+.nav-tabs .nav-link.active:focus::before, .nav-tabs .nav-item.show .nav-link:focus::before {
+    border: solid 2px $app-primary-500;
+}
+
+//#root > div > div.m-0.mt-6.row.align-items-center.justify-content-center, #root > div > div > div.m-0.mt-6.row.align-items-center.justify-content-center, #root > div > div.px-4.container-mw-xl.container-fluid, #root > div > div > div.px-4.container-mw-xl.container-fluid {
+//  display: none;
+//}

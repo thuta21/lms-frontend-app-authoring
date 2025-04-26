@@ -13,7 +13,7 @@ import { useModel } from '../generic/model-store';
 import SubHeader from '../generic/sub-header/SubHeader';
 import { USER_ROLES } from '../constants';
 import messages from './messages';
-import CourseTeamSideBar from './course-team-sidebar/CourseTeamSidebar';
+// import CourseTeamSideBar from './course-team-sidebar/CourseTeamSidebar';
 import AddUserForm from './add-user-form/AddUserForm';
 import AddTeamMember from './add-team-member/AddTeamMember';
 import CourseTeamMember from './course-team-member/CourseTeamMember';
@@ -117,15 +117,15 @@ const CourseTeam = ({ courseId }) => {
                         />
                       )}
                     </div>
-                    {isShowInitialSidebar && (
-                      <div className="sidebar-container">
-                        <CourseTeamSideBar
-                          courseId={courseId}
-                          isOwnershipHint={isOwnershipHint}
-                          isShowInitialSidebar={isShowInitialSidebar}
-                        />
-                      </div>
-                    )}
+                    {/* {isShowInitialSidebar && ( */}
+                    {/*   <div className="sidebar-container"> */}
+                    {/*     <CourseTeamSideBar */}
+                    {/*       courseId={courseId} */}
+                    {/*       isOwnershipHint={isOwnershipHint} */}
+                    {/*       isShowInitialSidebar={isShowInitialSidebar} */}
+                    {/*     /> */}
+                    {/*   </div> */}
+                    {/* )} */}
                     <InfoModal
                       isOpen={isInfoModalOpen}
                       close={closeInfoModal}
@@ -139,14 +139,14 @@ const CourseTeam = ({ courseId }) => {
                 </div>
               </article>
             </Layout.Element>
-            <Layout.Element>
-              {isShowUserFilledSidebar && (
-                <CourseTeamSideBar
-                  courseId={courseId}
-                  isOwnershipHint={isOwnershipHint}
-                />
-              )}
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   {isShowUserFilledSidebar && ( */}
+            {/*     <CourseTeamSideBar */}
+            {/*       courseId={courseId} */}
+            {/*       isOwnershipHint={isOwnershipHint} */}
+            {/*     /> */}
+            {/*   )} */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
       </Container>

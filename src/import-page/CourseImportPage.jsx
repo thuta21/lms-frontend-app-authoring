@@ -19,7 +19,7 @@ import {
 import ImportStepper from './import-stepper/ImportStepper';
 import { getImportTriggered, getLoadingStatus, getSavingStatus } from './data/selectors';
 import { LAST_IMPORT_COOKIE_NAME } from './data/constants';
-import ImportSidebar from './import-sidebar/ImportSidebar';
+// import ImportSidebar from './import-sidebar/ImportSidebar';
 import FileSection from './file-section/FileSection';
 import messages from './messages';
 
@@ -76,9 +76,9 @@ const CourseImportPage = ({ intl, courseId }) => {
                 {importTriggered && <ImportStepper courseId={courseId} />}
               </article>
             </Layout.Element>
-            <Layout.Element>
-              <ImportSidebar courseId={courseId} />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <ImportSidebar courseId={courseId} /> */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
       </Container>

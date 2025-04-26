@@ -40,7 +40,7 @@ import LearningOutcomesSection from './learning-outcomes-section';
 import InstructorsSection from './instructors-section';
 import RequirementsSection from './requirements-section';
 import LicenseSection from './license-section';
-import ScheduleSidebar from './schedule-sidebar';
+// import ScheduleSidebar from './schedule-sidebar';
 import messages from './messages';
 import { useLoadValuesPrompt, useSaveValuesPrompt } from './hooks';
 
@@ -330,12 +330,12 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
                 </div>
               </article>
             </Layout.Element>
-            <Layout.Element>
-              <ScheduleSidebar
-                courseId={courseId}
-                proctoredExamSettingsUrl={mfeProctoredExamSettingsUrl}
-              />
-            </Layout.Element>
+            {/* <Layout.Element> */}
+            {/*   <ScheduleSidebar */}
+            {/*     courseId={courseId} */}
+            {/*     proctoredExamSettingsUrl={mfeProctoredExamSettingsUrl} */}
+            {/*   /> */}
+            {/* </Layout.Element> */}
           </Layout>
         </section>
       </Container>
