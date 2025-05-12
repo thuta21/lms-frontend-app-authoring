@@ -117,7 +117,7 @@ a {
 }
 
 a:hover {
-  color: $app-primary-700;
+  color: $app-primary-700 !important;
 }
 
 .sidebar-link > a {
@@ -249,6 +249,30 @@ a.text-info-500:hover, a.text-info-500:focus {
 }
 .nav-tabs .nav-link.active:focus::before, .nav-tabs .nav-item.show .nav-link:focus::before {
     border: solid 2px $app-primary-500;
+}
+
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active {
+  border: solid 2px $app-primary-500 !important;
+}
+
+.nav-tabs .nav-link:focus::before {
+  border: 2px solid $app-primary-500 !important;
+}
+
+.btn-primary.focus::before, .btn-primary:focus::before {
+  border: solid 2px $app-primary-500 !important;
+}
+
+.tooltip-inner {
+  background-color: $app-primary-500 !important;
+}
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^=bottom] .arrow::before {
+    border-bottom-color: $app-primary-500 !important;
+}
+
+.text-primary-500 {
+  color: $app-primary-500 !important;
 }
 
 //#root > div > div.m-0.mt-6.row.align-items-center.justify-content-center, #root > div > div > div.m-0.mt-6.row.align-items-center.justify-content-center, #root > div > div.px-4.container-mw-xl.container-fluid, #root > div > div > div.px-4.container-mw-xl.container-fluid {
